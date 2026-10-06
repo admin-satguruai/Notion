@@ -69,7 +69,7 @@ export function GoogleLogin() {
     } catch (e) { active.current = false; setError(e instanceof Error ? e.message : "Google is unavailable."); }
   }, []);
   return <>
-    <Script src="https://accounts.google.com/gsi/client" strategy="afterInteractive" onReady={setup}
+    <Script src="https://accounts.google.com/gsi/client" strategy="afterInteractive" onReady={() => { void setup(); }}
       onError={() => setError("Google sign-in could not load. Check your network or browser settings.")} />
     <div className={styles.google} ref={holder} style={{ pointerEvents: busy ? "none" : "auto" }} aria-busy={busy} />
     {busy && <p role="status">Verifying your account...</p>}
