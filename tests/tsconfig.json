@@ -1,0 +1,1 @@
+{"compilerOptions":{"target":"ES2022","module":"CommonJS","moduleResolution":"Node","strict":true,"esModuleInterop":true,"skipLibCheck":true,"outDir":"../.auth-tests","types":["node"]},"include":["auth.test.ts","../lib/auth/core.ts"]}

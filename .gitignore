@@ -3,3 +3,7 @@ node_modules
 .env*
 !.env.example
 *.log
+
+# Authentication test output and TypeScript cache
+.auth-tests/
+*.tsbuildinfo

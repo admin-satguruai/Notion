@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npx tsc -p tests/tsconfig.json --noEmitOnError && node --test .auth-tests/tests/auth.test.js && npm run build"
+}
